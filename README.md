@@ -8,18 +8,20 @@ The German Traffic Sign Benchmark is a multi-class, single-image classification 
     More than 40 classes
     More than 50,000 images in total
     Large, lifelike database
-the link of the datasets 'https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?resource=download'
+the link to the datasets 'https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?resource=download'
 the steps in the project:
    1- Import Libraries: Import the necessary libraries for image processing, data manipulation, and building the CNN model.
    
    2- Data Preprocessing:
         Define the Path: Set the path to your dataset on Google Drive.
+        
         Read Images: Loop through each class directory, read, resize, and convert images to NumPy arrays.
         Normalize Image Data: Normalize pixel values to the range [0, 1].
         One-Hot Encode Labels: Convert labels to one-hot encoding.
         Train-Validation Split: Split the data into training and validation sets. 
         
   3- Define the CNN Model:
+  
         Convolutional Layers: Use Conv2D layers with ReLU activation followed by MaxPooling2D layers.
         Flatten Layer: Use Flatten to convert 2D feature maps to 1D feature vectors.
         Fully Connected Layers: Use Dense layers with ReLU activation and Dropout for regularization.
